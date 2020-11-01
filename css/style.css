@@ -1,0 +1,28 @@
+body, div{margin: 0; padding: 0; }
+
+.back {width: 1920px; height: 1080px; background: black; }
+.back2 {width: 1920px; height: 1080px;  position: relative;}
+.text {font-family: 'Nanum Pen Script', cursive; text-align: center; color: #F4F4F4;
+    font-size: 3em; line-height: 140%; opacity: 1; }
+.text2 {font-family: 'Nanum Pen Script', cursive; text-align: center; color: #F4F4F4
+          ; font-size: 2em;line-height: 140%; opacity: 1; }
+.butterfly {position: absolute; opacity: 0.3; }
+.button {width: 200px; height: 137px; position: absolute; top: 450px; left: 860px; opacity: 0; }
+
+#h:hover {animation: shake 1.5s}
+@keyframes shake {
+	  0% { transform: translate(2px, 2px) rotate(0deg); }
+  10% { transform: translate(-3px, -4px) rotate(-1deg); }
+  20% { transform: translate(-5px, 2px) rotate(1deg); }
+  30% { transform: translate(5px, 4px) rotate(0deg); }
+  40% { transform: translate(3px, -3px) rotate(1deg); }
+  50% { transform: translate(-3px, 4px) rotate(-1deg); }
+  60% { transform: translate(-5px, 3px) rotate(0deg); }
+  70% { transform: translate(1px, 2px) rotate(-1deg); }
+  80% { transform: translate(-3px, -3px) rotate(1deg); }
+  90% { transform: translate(1px, 3px) rotate(0deg); }
+  100% { transform: translate(2px, -3px) rotate(-1deg); }
+}
+
+.page1 {position: absolute; z-index: 3;}
+.page1.active {opacity: 0; }
